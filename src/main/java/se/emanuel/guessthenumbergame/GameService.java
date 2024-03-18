@@ -35,8 +35,7 @@ public class GameService {
             return "too big";
         }
         else {
-            newGame();
-            return "Correct!, new game initialized continue playing";
+            return "Correct!, tap reset to start new game";
         }
     }
 }

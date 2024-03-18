@@ -10,15 +10,17 @@
 <body>
 <h4>Guess the random number!</h4>
 
-<form action="game" method="get"></form>
+<form action="game" method="get">
+    <button type="submit">Reset game</button>
+</form>
 
 <form action="gamea" method="post">
     <input type="number" name="input">
     <button type="submit">Guess</button>
 </form>
 
-<a>Antal gissningar:<span th:text="${guess}"></span></a>
+<a>Antal gissningar: <span th:text="${guess}"></span></a>
 <br>
-<a>resultat:<span th:text="${result}"></span></a>
+<a>resultat: <span th:text="${result}"></span></a>
 </body>
 </html>

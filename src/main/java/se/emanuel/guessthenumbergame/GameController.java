@@ -16,6 +16,7 @@ public class GameController {
 
     @GetMapping("game")
     public String startGame(Model model) {
+        service.newGame();
         model.addAttribute("game", "");
         return "gamepage";
     }
