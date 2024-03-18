@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GuessGame</title>
+
+</head>
+<body>
+<h4>Guess the random number!</h4>
+
+<form action="game" method="get"></form>
+
+<form action="gamea" method="post">
+    <input type="number" name="input">
+    <button type="submit">Guess</button>
+</form>
+
+<a>Antal gissningar:<span th:text="${guess}"></span></a>
+<br>
+<a>resultat:<span th:text="${result}"></span></a>
+</body>
+</html>
